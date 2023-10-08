@@ -26,19 +26,19 @@ def main():
     answers = ["New Delhi", "Druopati murmur", "Narendra modi"]
     correct_answer = random.choice(questions)
 
-    question_label = tk.Label(window, text=correct_answer, font=("Arial", 14))
-    question_label.pack(pady=10)
+    question_label = tk.Label(window, text=correct_answer, font=("Open Sans", 40))
+    question_label.pack(pady=20)
     
-    entry = tk.Entry(window, font=("Arial", 14))
-    entry.pack(pady=20)
+    entry = tk.Entry(window, font=("Open Sans", 40))
+    entry.pack(pady=40)
 
     check_button = tk.Button(window, text="Check", command=check_answer)
-    check_button.pack(pady=5)
+    check_button.pack(pady=20)
 
     next_button = tk.Button(window, text="Next Question", command=next_question)
-    next_button.pack(pady=5)
+    next_button.pack(pady=20)
 
-    result_label = tk.Label(window, text="", font=("Arial", 14))
+    result_label = tk.Label(window, text="", font=("Open Sans", 40)
     result_label.pack(pady=5)
 
     window.mainloop()
